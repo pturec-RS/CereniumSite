@@ -1,0 +1,184 @@
+/* ============================================================
+   Cerenium Technologies — about.css
+   ============================================================ */
+
+/* ─── PAGE HERO (shared pattern) ────────────────────────────── */
+.page-hero {
+  position: relative;
+  padding: calc(var(--nav-height) + 5rem) 0 5rem;
+  overflow: hidden;
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+.page-hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  animation: heroFadeUp 0.9s ease both;
+}
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-hero-content h1 { color: var(--white); margin: 0.5rem 0 1.25rem; }
+.page-hero-content p  { color: rgba(255,255,255,0.75); font-size: 1.1rem; max-width:600px; }
+.hero-italic { color: var(--gold-light); font-style: italic; font-weight: 400; }
+
+/* ─── MISSION ────────────────────────────────────────────────── */
+.mission-section { padding: 6rem 0; }
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.mission-copy h2 { margin-bottom: 1rem; }
+.mission-copy .gold-rule { margin-bottom: 1.5rem; }
+.mission-copy p { max-width: 560px; }
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.stat-card {
+  background: var(--off-white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+.stat-number span {
+  font-size: 1.75rem;
+  color: var(--gold);
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+}
+
+.gold-stat { border-top: 3px solid var(--gold); }
+
+/* ─── APPROACH ───────────────────────────────────────────────── */
+.approach-section { padding: 6rem 0; }
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.approach-item { }
+
+.approach-icon {
+  width: 44px; height: 44px;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+.approach-icon svg { width: 100%; height: 100%; }
+
+.approach-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--navy);
+}
+
+.approach-item p { font-size: 0.9rem; line-height: 1.7; }
+
+/* ─── ORACLE SECTION ─────────────────────────────────────────── */
+.oracle-section { padding: 6rem 0; }
+
+.oracle-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.oracle-copy h2 { margin-bottom: 1rem; }
+.oracle-copy .gold-rule { margin-bottom: 1.5rem; }
+
+.oracle-large-badge { height: 50px; width: auto; margin-bottom: 2rem; }
+
+.oracle-products {
+  background: var(--off-white);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  border-left: 4px solid var(--gold);
+}
+
+.oracle-products h4 {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 1rem;
+}
+
+.product-list li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+.product-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ─── MIDMARKET ──────────────────────────────────────────────── */
+.midmarket-section { padding: 6rem 0; }
+
+.midmarket-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ─── ABOUT CTA ──────────────────────────────────────────────── */
+.about-cta { padding: 6rem 0; background: var(--off-white); }
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .mission-grid    { grid-template-columns: 1fr; gap: 3rem; }
+  .oracle-grid     { grid-template-columns: 1fr; gap: 3rem; }
+  .approach-grid   { grid-template-columns: 1fr 1fr; }
+  .midmarket-inner { grid-template-columns: 1fr; }
+  .midmarket-visual{ display: none; }
+}
+
+@media (max-width: 768px) {
+  .approach-grid   { grid-template-columns: 1fr; }
+  .mission-stats   { grid-template-columns: 1fr 1fr; }
+}

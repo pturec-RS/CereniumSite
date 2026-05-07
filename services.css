@@ -1,0 +1,198 @@
+/* ============================================================
+   Cerenium Technologies — services.css
+   ============================================================ */
+
+/* ─── SERVICES TAB BAR ───────────────────────────────────────── */
+.services-tab-bar {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 100;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.services-tabs {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 0;
+  scrollbar-width: none;
+}
+.services-tabs::-webkit-scrollbar { display: none; }
+
+.tab-link {
+  flex-shrink: 0;
+  display: inline-block;
+  padding: 1rem 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.tab-link:hover,
+.tab-link.active {
+  color: var(--navy);
+  border-bottom-color: var(--gold);
+}
+
+/* ─── SERVICE MODULE ─────────────────────────────────────────── */
+.service-module {
+  padding: 6rem 0;
+  scroll-margin-top: calc(var(--nav-height) + 56px); /* account for tab bar */
+}
+.service-module.alt-bg { background: var(--off-white); }
+
+.service-module-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.service-module-grid.reverse {
+  direction: rtl;
+}
+.service-module-grid.reverse > * {
+  direction: ltr;
+}
+
+/* Copy */
+.service-module-copy .eyebrow { margin-bottom: 0.75rem; }
+.service-module-copy h2 { margin-bottom: 1rem; }
+.service-module-copy .gold-rule { margin-bottom: 1.5rem; }
+
+.service-answer {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--gold);
+}
+
+.service-module-copy h3 {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.service-detail-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.service-detail-list li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.5;
+}
+.service-detail-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.75rem;
+  top: 0.1rem;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.product-tags span {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  background: var(--gold-pale);
+  color: var(--navy);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid rgba(184,150,62,0.2);
+}
+
+/* Visual */
+.service-module-visual { position: relative; }
+.service-module-visual img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-module-callout {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 300px;
+  border-top: 3px solid var(--gold);
+}
+
+/* reverse layout fix for callout */
+.service-module-grid.reverse .service-module-callout {
+  left: auto;
+  right: -1.5rem;
+}
+
+.callout-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+.callout-icon svg { width: 100%; height: 100%; }
+
+.service-module-callout strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+.service-module-callout p {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* ─── SERVICES BOTTOM CTA ────────────────────────────────────── */
+.services-bottom-cta {
+  padding: 6rem 0;
+  background: var(--gold-pale);
+  border-top: 4px solid var(--gold);
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .service-module-grid,
+  .service-module-grid.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 3rem;
+  }
+  .service-module-callout { left: 1rem; right: auto; bottom: -1rem; max-width: 260px; }
+  .service-module-grid.reverse .service-module-callout { right: auto; left: 1rem; }
+  .service-detail-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .tab-link { padding: 0.75rem 1rem; font-size: 0.75rem; }
+  .service-module { padding: 4rem 0; }
+}

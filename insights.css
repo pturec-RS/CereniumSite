@@ -1,0 +1,96 @@
+/* ============================================================
+   Cerenium Technologies — insights.css
+   ============================================================ */
+
+.insights-coming-soon {
+  padding: 6rem 0;
+}
+
+.coming-soon-block { }
+
+.coming-soon-icon {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.coming-soon-block h2 { margin-bottom: 0.75rem; }
+
+.stubs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+.stub-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.75;
+}
+.stub-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(247,248,250,0.5) 10px,
+    rgba(247,248,250,0.5) 11px
+  );
+  pointer-events: none;
+}
+
+.stub-card .insight-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--gold-pale);
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.stub-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.stub-card p {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.stub-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  border: 1px dashed var(--gray-200);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .stubs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .stubs-grid { grid-template-columns: 1fr; }
+}
