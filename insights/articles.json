@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "ehr-strategy-18-months",
+    "title": "How Midmarket Health Systems Can Maximize Their Oracle Health Investment in the First 18 Months",
+    "excerpt": "Community hospitals often go live and plateau. Here is the optimization roadmap we recommend post-implementation.",
+    "category": "EHR Strategy",
+    "readTime": "10 min read",
+    "url": "insights/ehr-strategy-18-months.html"
+  },
+  {
+    "slug": "revenue-cycle-denial-gap",
+    "title": "Closing the Denial Gap: Oracle Health Revenue Cycle Strategies for 2025",
+    "excerpt": "Denial rates continue to climb. We break down the Oracle Health configuration changes that protect your cash flow.",
+    "category": "Revenue Cycle",
+    "readTime": "11 min read",
+    "url": "insights/revenue-cycle-denial-gap.html"
+  },
+  {
+    "slug": "fhir-r4-integration-guide",
+    "title": "FHIR R4 and Oracle Health: A Practical Integration Guide for Community Hospitals",
+    "excerpt": "The mandate is clear. A practitioner's breakdown of FHIR R4 integration within Cerner Millennium.",
+    "category": "Interoperability",
+    "readTime": "12 min read",
+    "url": "insights/fhir-r4-integration-guide.html"
+  },
+  {
+    "slug": "physician-adoption-failure",
+    "title": "Why Physician Adoption Fails — and What Oracle Health Clients Can Do About It",
+    "excerpt": "The technology rarely fails. The adoption plan does. What we have learned from EHR rollouts across the midmarket.",
+    "category": "Change Management",
+    "readTime": "11 min read",
+    "url": "insights/physician-adoption-failure.html"
+  },
+  {
+    "slug": "oracle-health-upgrade-planning",
+    "title": "Oracle Health Upgrade Planning: The Midmarket Health System's Guide to a Smooth Version Cycle",
+    "excerpt": "Upgrade season should not feel like a crisis. Here is how to build a repeatable upgrade cadence for Cerner Millennium.",
+    "category": "Lifecycle Management",
+    "readTime": "10 min read",
+    "url": "insights/oracle-health-upgrade-planning.html"
+  },
+  {
+    "slug": "healtheintent-community-hospitals",
+    "title": "HealtheIntent for Community Hospitals: Getting Value From Oracle's Population Health Platform",
+    "excerpt": "HealtheIntent is powerful — and underutilized in the midmarket. A practical guide to activating its value.",
+    "category": "Analytics",
+    "readTime": "11 min read",
+    "url": "insights/healtheintent-community-hospitals.html"
+  }
+]

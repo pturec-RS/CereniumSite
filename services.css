@@ -36,7 +36,7 @@
 .tab-link:hover,
 .tab-link.active {
   color: var(--navy);
-  border-bottom-color: var(--gold);
+  border-bottom-color: var(--gold); /* gold border is decorative, not text — no contrast req */
 }
 
 /* ─── SERVICE MODULE ─────────────────────────────────────────── */
@@ -114,7 +114,7 @@
   display: inline-block;
   padding: 0.3rem 0.85rem;
   background: var(--gold-pale);
-  color: var(--navy);
+  color: var(--navy); /* navy on gold-pale = 12.18:1 — WCAG AA (was already navy, confirmed) */
   border-radius: 20px;
   font-size: 0.78rem;
   font-weight: 600;

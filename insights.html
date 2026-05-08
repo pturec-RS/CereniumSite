@@ -7,6 +7,9 @@
   <meta name="description" content="Insights and perspectives on Oracle Health, Cerner Millennium, EHR strategy, Revenue Cycle optimization, and healthcare IT from the consultants at Cerenium Technologies." />
   <meta name="keywords" content="Oracle Health insights, Cerner blog, healthcare IT perspectives, EHR strategy, Oracle Health consulting blog" />
   <link rel="canonical" href="https://cereniumtech.com/insights.html" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 
   <meta property="og:title" content="Insights | Cerenium Technologies | Oracle Health Perspectives" />
   <meta property="og:description" content="Practical guidance on Oracle Health strategy, Cerner Millennium optimization, and healthcare IT from consultants who work in these systems every day." />
@@ -40,71 +43,30 @@
       </div>
     </section>
 
-    <!-- ── COMING SOON ── -->
-    <section class="insights-coming-soon" aria-labelledby="insights-soon-heading">
-      <div class="container" style="text-align:center;">
-        <div class="reveal coming-soon-block">
-          <div class="coming-soon-icon" aria-hidden="true">✦</div>
-          <span class="eyebrow">Coming Soon</span>
-          <h2 id="insights-soon-heading">Our first articles are on their way.</h2>
+    <!-- ── ARTICLES GRID ── -->
+    <section class="insights-articles" aria-labelledby="insights-grid-heading">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Latest Insights</span>
+          <h2 id="insights-grid-heading" class="section-title">From the field.</h2>
           <div class="gold-rule"></div>
-          <p style="max-width:540px;margin:1rem auto 0;">
-            The Cerenium Insights library is being built to provide genuine, practitioner-level
-            perspectives on Oracle Health strategy, Cerner Millennium optimization, and the
-            real challenges midmarket health systems face every day. No fluff. No vendor marketing.
-            Just experience from people who live in these systems.
-          </p>
-
-          <div class="stubs-grid" role="list" aria-label="Upcoming Oracle Health articles">
-
-            <article class="stub-card" role="listitem">
-              <div class="insight-tag" aria-label="Category: EHR Strategy">EHR Strategy</div>
-              <h3>How Midmarket Health Systems Can Maximize Their Oracle Health Investment in the First 18 Months</h3>
-              <p>Community hospitals often go live and plateau. Here's the optimization roadmap we recommend post-implementation.</p>
-              <span class="stub-label" aria-label="Status: Article coming soon">Article coming soon</span>
-            </article>
-
-            <article class="stub-card" role="listitem">
-              <div class="insight-tag" aria-label="Category: Revenue Cycle">Revenue Cycle</div>
-              <h3>Closing the Denial Gap: Oracle Health Revenue Cycle Strategies for 2025</h3>
-              <p>Denial rates continue to climb. We break down the Oracle Health configuration changes that protect your cash flow.</p>
-              <span class="stub-label" aria-label="Status: Article coming soon">Article coming soon</span>
-            </article>
-
-            <article class="stub-card" role="listitem">
-              <div class="insight-tag" aria-label="Category: Interoperability">Interoperability</div>
-              <h3>FHIR R4 and Oracle Health: A Practical Integration Guide for Community Hospitals</h3>
-              <p>The mandate is clear. A practitioner's breakdown of FHIR R4 integration within Cerner Millennium.</p>
-              <span class="stub-label" aria-label="Status: Article coming soon">Article coming soon</span>
-            </article>
-
-            <article class="stub-card" role="listitem">
-              <div class="insight-tag" aria-label="Category: Change Management">Change Management</div>
-              <h3>Why Physician Adoption Fails — and What Oracle Health Clients Can Do About It</h3>
-              <p>The technology rarely fails. The adoption plan does. What we've learned from EHR rollouts across the midmarket.</p>
-              <span class="stub-label" aria-label="Status: Article coming soon">Article coming soon</span>
-            </article>
-
-            <article class="stub-card" role="listitem">
-              <div class="insight-tag" aria-label="Category: Lifecycle Management">Lifecycle Management</div>
-              <h3>Oracle Health Upgrade Planning: The Midmarket Health System's Guide to a Smooth Version Cycle</h3>
-              <p>Upgrade season shouldn't feel like a crisis. Here's how to build a repeatable upgrade cadence for Cerner Millennium.</p>
-              <span class="stub-label" aria-label="Status: Article coming soon">Article coming soon</span>
-            </article>
-
-            <article class="stub-card" role="listitem">
-              <div class="insight-tag" aria-label="Category: Analytics">Analytics</div>
-              <h3>HealtheIntent for Community Hospitals: Getting Value From Oracle's Population Health Platform</h3>
-              <p>HealtheIntent is powerful — and underutilized in the midmarket. A practical guide to activating its value.</p>
-              <span class="stub-label" aria-label="Status: Article coming soon">Article coming soon</span>
-            </article>
-
-          </div>
-
-          <div style="margin-top:3rem;">
-            <a href="contact.html" class="btn btn-primary" aria-label="Contact Cerenium Technologies">Contact Us in the Meantime</a>
-          </div>
         </div>
+
+        <div class="stubs-grid" id="articles-grid" role="list" aria-label="Oracle Health insights articles">
+          <!-- Populated by JavaScript from articles.json -->
+        </div>
+
+        <div class="load-more-wrap" id="load-more-wrap" aria-live="polite">
+          <button
+            class="btn btn-secondary"
+            id="load-more-btn"
+            aria-label="Load more insights articles"
+            style="display:none;"
+          >
+            Load More Insights
+          </button>
+        </div>
+
       </div>
     </section>
 
@@ -112,5 +74,73 @@
 
   <div id="footer-placeholder"></div>
   <script src="components.js"></script>
+
+  <script>
+    (function () {
+      const BATCH = 6;
+      let allArticles = [];
+      let shown = 0;
+
+      function buildCard(article) {
+        return `
+          <article class="stub-card stub-card--linked " role="listitem">
+            <div class="insight-tag" aria-label="Category: ${article.category}">${article.category}</div>
+            <h3>${article.title}</h3>
+            <p>${article.excerpt}</p>
+            <div class="stub-card-footer">
+              <span class="stub-read-time" aria-label="${article.readTime}">${article.readTime}</span>
+              <a href="${article.url}" class="stub-read-link" aria-label="Read: ${article.title}">
+                Read Article <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>`;
+      }
+
+      function renderBatch() {
+        const grid = document.getElementById('articles-grid');
+        const btn = document.getElementById('load-more-btn');
+        const nextBatch = allArticles.slice(shown, shown + BATCH);
+
+        nextBatch.forEach(function (article) {
+          const temp = document.createElement('div');
+          temp.innerHTML = buildCard(article);
+          const card = temp.firstElementChild;
+          grid.appendChild(card);
+
+          // Trigger reveal animation for newly added cards
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              card.classList.add('is-visible');
+            });
+          });
+        });
+
+        shown += nextBatch.length;
+
+        if (shown >= allArticles.length) {
+          btn.style.display = 'none';
+        } else {
+          btn.style.display = 'inline-flex';
+        }
+      }
+
+      fetch('insights/articles.json')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          allArticles = data;
+          renderBatch();
+
+          document.getElementById('load-more-btn').addEventListener('click', function () {
+            renderBatch();
+          });
+        })
+        .catch(function () {
+          // Fallback: show a graceful message if fetch fails (e.g. file:// protocol in dev)
+          document.getElementById('articles-grid').innerHTML =
+            '<p style="color:#4A5568;font-family:var(--font-body);grid-column:1/-1;padding:2rem 0;">Unable to load articles. If viewing locally, use Live Server or a local web server.</p>';
+        });
+    })();
+  </script>
+
 </body>
 </html>

@@ -7,6 +7,9 @@
   <meta name="description" content="Contact Cerenium Technologies to discuss your Oracle Health EHR consulting needs. We serve midmarket health systems across the United States with Oracle and Cerner expertise." />
   <meta name="keywords" content="contact Cerenium Technologies, Oracle Health consulting inquiry, Cerner consulting contact, healthcare IT consulting request" />
   <link rel="canonical" href="https://cereniumtech.com/contact.html" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 
   <meta property="og:title" content="Contact Cerenium Technologies | Oracle Health Consulting" />
   <meta property="og:description" content="Request a consultation with Cerenium Technologies. Oracle Health and Cerner expertise for midmarket health systems." />
@@ -191,9 +194,34 @@
                 <span class="btn-text">Submit Request</span>
                 <span class="btn-loading" aria-hidden="true" style="display:none;">Sending...</span>
               </button>
+              <!-- GDPR consent checkbox -->
+              <div class="form-group consent-group">
+                <label class="checkbox-label consent-label">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    required
+                    aria-describedby="consent-error"
+                  />
+                  I agree to be contacted by Cerenium Technologies regarding my inquiry.
+                  By submitting this form I acknowledge that my information will be handled
+                  in accordance with the
+                  <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+                  <span class="required">*</span>
+                </label>
+                <span class="field-error" id="consent-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text">Submit Request</span>
+                <span class="btn-loading" aria-hidden="true" style="display:none;">Sending...</span>
+              </button>
+
               <p class="form-disclaimer">
-                By submitting, you agree to be contacted by Cerenium Technologies regarding your inquiry.
-                We do not share your information with third parties.
+                We do not sell or share your information with third parties.
+                You may withdraw consent at any time by contacting
+                <a href="mailto:info@cereniumtech.com">info@cereniumtech.com</a>.
               </p>
             </div>
 

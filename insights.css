@@ -2,6 +2,21 @@
    Cerenium Technologies — insights.css
    ============================================================ */
 
+/* ── Insights Articles Section ── */
+.insights-articles {
+  padding: 5rem 0 6rem;
+  background: #fff;
+}
+
+.insights-articles .section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* ── Coming Soon (kept for reference) ── */
 .insights-coming-soon {
   padding: 6rem 0;
 }
@@ -17,6 +32,7 @@
 
 .coming-soon-block h2 { margin-bottom: 0.75rem; }
 
+/* ── Stubs Grid ── */
 .stubs-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -25,6 +41,7 @@
   text-align: left;
 }
 
+/* ── Base Card ── */
 .stub-card {
   background: var(--white);
   border: 1px solid var(--gray-200);
@@ -32,20 +49,6 @@
   padding: 1.75rem;
   position: relative;
   overflow: hidden;
-  opacity: 0.75;
-}
-.stub-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 10px,
-    rgba(247,248,250,0.5) 10px,
-    rgba(247,248,250,0.5) 11px
-  );
-  pointer-events: none;
 }
 
 .stub-card .insight-tag {
@@ -87,6 +90,82 @@
   border-radius: 20px;
 }
 
+/* ── Linked Card Variant ── */
+.stub-card--linked {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.stub-card--linked:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(27,42,74,0.12);
+}
+
+.stub-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--gold-pale);
+}
+
+.stub-read-time {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #767676;
+  letter-spacing: 0.03em;
+}
+
+.stub-read-link {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gold-text);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease, gap 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.stub-read-link:hover {
+  color: var(--navy);
+}
+
+/* ── Load More ── */
+.load-more-wrap {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2.25rem;
+  background: transparent;
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+/* ── Responsive ── */
 @media (max-width: 1024px) {
   .stubs-grid { grid-template-columns: repeat(2, 1fr); }
 }

@@ -45,7 +45,7 @@ label {
   letter-spacing: 0.02em;
 }
 
-.required { color: var(--gold); margin-left: 2px; }
+.required { color: var(--gold-text); margin-left: 2px; } /* gold-text = 5.09:1 on white */
 
 input[type="text"],
 input[type="email"],
@@ -67,7 +67,7 @@ textarea {
 }
 
 input::placeholder,
-textarea::placeholder { color: var(--gray-400); }
+textarea::placeholder { color: var(--gray-placeholder); } /* #767676 = 4.54:1 on white — WCAG AA */
 
 input:focus,
 select:focus,
@@ -143,7 +143,7 @@ textarea { resize: vertical; min-height: 120px; }
 
 .form-disclaimer {
   font-size: 0.75rem;
-  color: var(--gray-400);
+  color: var(--gray-placeholder); /* #767676 = 4.54:1 on white — WCAG AA */
   line-height: 1.5;
   max-width: 440px;
 }
@@ -196,7 +196,7 @@ textarea { resize: vertical; min-height: 120px; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-text); /* gold-text = 4.79:1 on off-white — WCAG AA */
   margin-bottom: 1.5rem;
 }
 

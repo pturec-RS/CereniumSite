@@ -68,7 +68,7 @@
 }
 .stat-number span {
   font-size: 1.75rem;
-  color: var(--gold);
+  color: var(--gold-text); /* gold-text = 5.09:1 on white — WCAG AA */
 }
 
 .stat-label {
