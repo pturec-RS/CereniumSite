@@ -16,8 +16,8 @@ const NAV_HTML = `
   <div class="container nav-inner">
 
     <!-- Logo -->
-    <a href="/index.html" class="nav-logo" aria-label="Cerenium Technologies Home">
-      <img src="/assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" width="180" height="90" />
+    <a href="index.html" class="nav-logo" aria-label="Cerenium Technologies Home">
+      <img src="assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" width="180" height="90" />
     </a>
 
     <!-- Desktop Nav -->
@@ -42,9 +42,9 @@ const NAV_HTML = `
           </ul>
         </li>
 
-        <li><a href="/about.html" class="nav-link">About</a></li>
-        <li><a href="/insights.html" class="nav-link">Insights</a></li>
-        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="insights.html" class="nav-link">Insights</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
@@ -60,12 +60,12 @@ const NAV_HTML = `
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <ul role="list">
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/services.html">Services</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/insights.html">Insights</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-      <li><a href="/contact.html" class="btn btn-primary" style="display:inline-block;margin-top:1rem;">Request a Consultation</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary" style="display:inline-block;margin-top:1rem;">Request a Consultation</a></li>
     </ul>
   </div>
 </header>
@@ -91,14 +91,14 @@ const FOOTER_HTML = `
     <div class="footer-links-group">
       <h3 class="footer-heading">Services</h3>
       <ul role="list">
-        <li><a href="/services.html#ams">Application Managed Services</a></li>
-        <li><a href="/services.html#support">Support Services</a></li>
-        <li><a href="/services.html#financial">Financial Process</a></li>
-        <li><a href="/services.html#integration">Integration &amp; Interoperability</a></li>
-        <li><a href="/services.html#analytics">Reporting &amp; Analytics</a></li>
-        <li><a href="/services.html#change">Change Management</a></li>
-        <li><a href="/services.html#lifecycle">EHR Lifecycle Management</a></li>
-        <li><a href="/services.html#technical">Technical Services</a></li>
+        <li><a href="services.html#ams">Application Managed Services</a></li>
+        <li><a href="services.html#support">Support Services</a></li>
+        <li><a href="services.html#financial">Financial Process</a></li>
+        <li><a href="services.html#integration">Integration &amp; Interoperability</a></li>
+        <li><a href="services.html#analytics">Reporting &amp; Analytics</a></li>
+        <li><a href="services.html#change">Change Management</a></li>
+        <li><a href="services.html#lifecycle">EHR Lifecycle Management</a></li>
+        <li><a href="services.html#technical">Technical Services</a></li>
       </ul>
     </div>
 
@@ -122,9 +122,9 @@ const FOOTER_HTML = `
     <div class="container footer-bottom-inner">
       <p>&copy; <span id="footer-year"></span> Cerenium Technologies, LLC. All rights reserved.</p>
       <p>
-        <a href="/privacy-policy.html">Privacy Policy</a> &middot;
-        <a href="/terms-of-use.html">Terms of Use</a> &middot;
-        <a href="/cookie-policy.html">Cookie Policy</a> &middot;
+        <a href="privacy-policy.html">Privacy Policy</a> &middot;
+        <a href="terms-of-use.html">Terms of Use</a> &middot;
+        <a href="cookie-policy.html">Cookie Policy</a> &middot;
         <button class="footer-cookie-link" id="manage-cookies-btn" aria-label="Manage cookie preferences">Manage Cookies</button>
       </p>
     </div>
@@ -523,7 +523,7 @@ function highlightActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link, .mobile-menu a').forEach(link => {
     const href = link.getAttribute('href');
-    if (href && href.split('#')[0].replace('/', '') === path) {
+    if (href && href.split('#')[0] === path) {
       link.classList.add('active');
     }
   });
