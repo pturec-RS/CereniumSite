@@ -285,7 +285,7 @@ const COOKIE_STYLES = `
     background: none;
     border: none;
     padding: 0;
-    color: inherit;
+    color: #FFFFFF;
     font: inherit;
     cursor: pointer;
     text-decoration: underline;
@@ -294,6 +294,13 @@ const COOKIE_STYLES = `
 
   .footer-cookie-link:hover {
     color: #D4AF6A;
+  }
+
+  .footer-bottom-inner,
+  .footer-bottom-inner p,
+  .footer-bottom-inner span,
+  .footer-bottom-inner a {
+    color: #FFFFFF !important;
   }
 
   /* ── Mobile ── */

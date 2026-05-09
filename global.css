@@ -445,10 +445,10 @@ nav { margin-left: auto; }
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.footer-bottom-inner a {
+.footer-bottom-inner p,
+.footer-bottom-inner span {
    color: #FFFFFF !important;
-  transition: color var(--transition);
-}
+  }
 .footer-bottom-inner a:hover { color: var(--gold-light); }
 
 /* ─── SCROLL REVEAL ──────────────────────────────────────────── */
