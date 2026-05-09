@@ -404,7 +404,7 @@ nav { margin-left: auto; }
 .footer-desc {
   font-size: 0.875rem;
   line-height: 1.7;
-  color: color: #E8EAED; /* solid equivalent of rgba(255,255,255,0.75) on #111D33 */
+  color: #E8EAED; /* solid equivalent of rgba(255,255,255,0.75) on #111D33 */
   max-width: 300px;
   margin-bottom: 1.5rem;
 }
@@ -440,12 +440,12 @@ nav { margin-left: auto; }
   justify-content: space-between;
   align-items: center;
   font-size: 0.8rem;
-   color: color: #E8EAED;
+   color: #E8EAED;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 .footer-bottom-inner a {
-   color: color: #E8EAED;
+   color: #E8EAED;
   transition: color var(--transition);
 }
 .footer-bottom-inner a:hover { color: var(--gold-light); }
