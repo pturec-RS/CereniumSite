@@ -114,6 +114,9 @@
   --gray-400:   #9CA3AF;
   --gray-600:   #4B5563;
   --gray-800:   #1F2937;
+  --navy-deep:  #0D1729;
+  --navy-pale:  #F4F6FA;
+  --slate-mid:  #A8B4C8;
   --text:       #1B2A4A;
   --text-muted: #5A6A85;
 
@@ -469,14 +472,6 @@ nav { margin-left: auto; }
   border-radius: var(--radius-sm);
 }
 
-button:focus-visible,
-a:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline: 3px solid var(--gold);
-  outline-offset: 3px;
-}
 
 /* ─── UTILITY ────────────────────────────────────────────────── */
 .text-gold   { color: var(--gold); }

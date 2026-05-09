@@ -169,7 +169,7 @@
 }
 
 .policy-content a {
-  color: var(--gold-dark, #8B6914);
+  color: var(--gold-text);
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.15s ease;
