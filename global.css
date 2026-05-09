@@ -432,6 +432,7 @@ nav { margin-left: auto; }
 .footer-links-group ul li a:hover { color: var(--gold-light); }
 
 .footer-bottom {
+  background: var(--navy-dark);
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 1.5rem 0;
 }
