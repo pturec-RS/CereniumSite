@@ -149,7 +149,7 @@ const COOKIE_BANNER_HTML = `
         We use analytics cookies (Google Analytics) to understand how visitors use this site,
         which helps us improve our content and services. You can accept or decline non-essential
         cookies below. Essential site functionality does not require cookies.
-        <a href="${BASE_PATH}/cookie-policy.html" class="cookie-policy-link">Learn more</a>
+        <a href="${BASE_PATH}/cookie-policy.html" class="cookie-policy-link">Read our Cookie Policy</a>
       </p>
     </div>
     <div class="cookie-banner-actions">
