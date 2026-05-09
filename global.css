@@ -441,12 +441,12 @@ nav { margin-left: auto; }
   justify-content: space-between;
   align-items: center;
   font-size: 0.8rem;
-   color: #E8EAED;
+   color: #FFFFFF !important;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 .footer-bottom-inner a {
-   color: #E8EAED;
+   color: #FFFFFF !important;
   transition: color var(--transition);
 }
 .footer-bottom-inner a:hover { color: var(--gold-light); }
