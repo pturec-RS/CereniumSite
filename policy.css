@@ -1,0 +1,250 @@
+/* ============================================================
+   policy.css — Shared styles for Privacy Policy, Cookie Policy,
+   and Terms of Use pages.
+   Cerenium Technologies
+   ============================================================ */
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.policy-hero {
+  background: var(--navy-deep, #0D1729);
+  padding: 7rem 0 4rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(184, 150, 62, 0.2);
+}
+
+.policy-hero .eyebrow {
+  color: var(--gold-light, #D4AF6A);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.policy-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+
+.policy-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: var(--slate-mid, #A8B4C8);
+  margin: 0;
+}
+
+/* ── Body Layout ──────────────────────────────────────────── */
+.policy-body {
+  padding: 4rem 0 6rem;
+  background: var(--white, #ffffff);
+}
+
+.policy-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .policy-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ── Table of Contents ────────────────────────────────────── */
+.policy-toc {
+  position: sticky;
+  top: 5.5rem;
+  background: var(--navy-pale, #F4F6FA);
+  border-left: 3px solid var(--gold, #B8963E);
+  padding: 1.5rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.toc-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--navy, #1B2A4A);
+  margin: 0 0 1rem;
+}
+
+.policy-toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: toc-counter;
+}
+
+.policy-toc li {
+  counter-increment: toc-counter;
+  margin-bottom: 0.5rem;
+}
+
+.policy-toc a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--navy, #1B2A4A);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.15s ease;
+}
+
+.policy-toc a:hover {
+  color: var(--gold, #B8963E);
+}
+
+@media (max-width: 860px) {
+  .policy-toc {
+    position: static;
+  }
+}
+
+/* ── Policy Content Typography ────────────────────────────── */
+.policy-content {
+  max-width: 72ch;
+}
+
+.policy-intro {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  color: var(--navy, #1B2A4A);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.policy-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--navy-deep, #0D1729);
+  margin: 3rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(184, 150, 62, 0.25);
+  line-height: 1.2;
+}
+
+.policy-content h2:first-of-type {
+  margin-top: 2rem;
+}
+
+.policy-content h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy, #1B2A4A);
+  margin: 2rem 0 0.75rem;
+}
+
+.policy-content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #3A4A5C;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.policy-content ul {
+  margin: 0.5rem 0 1.25rem 1.25rem;
+  padding: 0;
+}
+
+.policy-content li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #3A4A5C;
+  line-height: 1.75;
+  margin-bottom: 0.5rem;
+}
+
+.policy-content a {
+  color: var(--gold-dark, #8B6914);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s ease;
+}
+
+.policy-content a:hover {
+  color: var(--navy, #1B2A4A);
+}
+
+/* ── Processor Table ──────────────────────────────────────── */
+.processor-table-wrapper {
+  overflow-x: auto;
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid rgba(184, 150, 62, 0.2);
+  border-radius: 4px;
+}
+
+.processor-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+}
+
+.processor-table thead {
+  background: var(--navy-deep, #0D1729);
+  color: #ffffff;
+}
+
+.processor-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.processor-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(184, 150, 62, 0.12);
+  color: #3A4A5C;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.processor-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.processor-table tbody tr:nth-child(even) {
+  background: var(--navy-pale, #F4F6FA);
+}
+
+/* ── Contact Block ────────────────────────────────────────── */
+.contact-block {
+  background: var(--navy-pale, #F4F6FA);
+  border-left: 3px solid var(--gold, #B8963E);
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0 1.5rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.contact-block p {
+  margin: 0;
+  line-height: 1.9;
+}
+
+/* ── Disclaimer ───────────────────────────────────────────── */
+.policy-disclaimer {
+  font-size: 0.8rem !important;
+  color: var(--slate-mid, #A8B4C8) !important;
+  font-style: italic;
+  margin-top: 3rem !important;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(184, 150, 62, 0.15);
+}

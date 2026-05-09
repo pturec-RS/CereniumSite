@@ -16,9 +16,6 @@
   <meta property="og:url" content="https://cereniumtech.com/contact.html" />
   <meta property="og:type" content="website" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="global.css" />
   <link rel="stylesheet" href="about.css" />
@@ -48,9 +45,9 @@
   <main id="main-content">
 
     <!-- ── PAGE HERO ── -->
-    <section class="page-hero contact-hero" aria-label="Contact page hero">
+      <section class="page-hero contact-hero" aria-label="Contact page hero">
       <div class="page-hero-bg">
-        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=1920&q=80" alt="" aria-hidden="true" loading="eager" />
+        <img src="/assets/images/contact-hero.jpg" alt="" aria-hidden="true" loading="eager" />
         <div class="hero-overlay"></div>
       </div>
       <div class="container page-hero-content">
@@ -190,26 +187,12 @@
 
             <!-- Submit -->
             <div class="form-submit">
-              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
-                <span class="btn-text">Submit Request</span>
-                <span class="btn-loading" aria-hidden="true" style="display:none;">Sending...</span>
-              </button>
-              <!-- GDPR consent checkbox -->
+             <!-- GDPR consent checkbox -->
               <div class="form-group consent-group">
-                <label class="checkbox-label consent-label">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    name="consent"
-                    required
-                    aria-describedby="consent-error"
-                  />
-                  I agree to be contacted by Cerenium Technologies regarding my inquiry.
-                  By submitting this form I acknowledge that my information will be handled
-                  in accordance with the
-                  <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.
-                  <span class="required">*</span>
-                </label>
+                <label class="checkbox-label consent-label" for="consent">
+                  <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error" />
+                <span>I agree to be contacted by Cerenium Technologies regarding my inquiry. By submitting this form I acknowledge that my information will be handled in accordance with the <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.<span class="required">*</span></span>
+              </label>
                 <span class="field-error" id="consent-error" aria-live="polite"></span>
               </div>
 
@@ -282,13 +265,7 @@
                 <span style="display:block;font-size:0.78rem;color:var(--gray-400);">Mon–Fri, 8am–6pm CT</span>
               </div>
             </div>
-            <div class="channel-item">
-              <div class="channel-icon" aria-hidden="true">🌐</div>
-              <div>
-                <strong>Location</strong>
-                <span>100% Remote &mdash; Serving the U.S.</span>
-              </div>
-            </div>
+            
           </div>
 
           <div class="contact-oracle-badge">

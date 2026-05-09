@@ -7,7 +7,14 @@
 
 // ─── GA4 MEASUREMENT ID ──────────────────────────────────────────────────────
 // Replace with your real ID when available: e.g. 'G-XXXXXXXXXX'
-const GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+const GA4_MEASUREMENT_ID = 'G-ZDFHFYF3KM';
+
+// ─── BASE PATH (environment-aware) ───────────────────────────────────────────
+// On GitHub Pages the site lives at /CereniumSite/; on cereniumtech.com it
+// lives at the root. This constant is prepended to every absolute-style path
+// so the same file works in both environments without any changes.
+// When you go live on cereniumtech.com this resolves to '' automatically.
+const BASE_PATH = window.location.hostname === 'pturec-rs.github.io' ? '/CereniumSite' : '';
 
 // ─── NAVIGATION HTML ────────────────────────────────────────────────────────
 const NAV_HTML = `
@@ -16,14 +23,14 @@ const NAV_HTML = `
   <div class="container nav-inner">
 
     <!-- Logo -->
-    <a href="index.html" class="nav-logo" aria-label="Cerenium Technologies Home">
-      <img src="assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" width="180" height="90" />
+    <a href="${BASE_PATH}/index.html" class="nav-logo" aria-label="Cerenium Technologies Home">
+      <img src="${BASE_PATH}/assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" width="180" height="90" />
     </a>
 
     <!-- Desktop Nav -->
     <nav aria-label="Primary navigation">
       <ul class="nav-links" role="list">
-        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="${BASE_PATH}/index.html" class="nav-link">Home</a></li>
 
         <!-- Services Dropdown -->
         <li class="nav-dropdown-wrapper">
@@ -31,25 +38,25 @@ const NAV_HTML = `
             Services
           </button>
           <ul class="nav-dropdown" role="menu">
-            <li role="menuitem"><a href="/services.html#ams">Application Managed Services</a></li>
-            <li role="menuitem"><a href="/services.html#support">Support Services</a></li>
-            <li role="menuitem"><a href="/services.html#financial">Financial Process</a></li>
-            <li role="menuitem"><a href="/services.html#integration">Integration &amp; Interoperability</a></li>
-            <li role="menuitem"><a href="/services.html#analytics">Reporting &amp; Analytics</a></li>
-            <li role="menuitem"><a href="/services.html#change">Change Management</a></li>
-            <li role="menuitem"><a href="/services.html#lifecycle">EHR Lifecycle Management</a></li>
-            <li role="menuitem"><a href="/services.html#technical">Technical Services</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#ams">Application Managed Services</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#support">Support Services</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#financial">Financial Process</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#integration">Integration &amp; Interoperability</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#analytics">Reporting &amp; Analytics</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#change">Change Management</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#lifecycle">EHR Lifecycle Management</a></li>
+            <li role="menuitem"><a href="${BASE_PATH}/services.html#technical">Technical Services</a></li>
           </ul>
         </li>
 
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="insights.html" class="nav-link">Insights</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="${BASE_PATH}/about.html" class="nav-link">About</a></li>
+        <li><a href="${BASE_PATH}/insights.html" class="nav-link">Insights</a></li>
+        <li><a href="${BASE_PATH}/contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
     <!-- CTA -->
-    <a href="/contact.html" class="btn btn-primary nav-cta">Request a Consultation</a>
+    <a href="${BASE_PATH}/contact.html" class="btn btn-primary nav-cta">Request a Consultation</a>
 
     <!-- Mobile Toggle -->
     <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -60,12 +67,12 @@ const NAV_HTML = `
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <ul role="list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="insights.html">Insights</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="btn btn-primary" style="display:inline-block;margin-top:1rem;">Request a Consultation</a></li>
+      <li><a href="${BASE_PATH}/index.html">Home</a></li>
+      <li><a href="${BASE_PATH}/services.html">Services</a></li>
+      <li><a href="${BASE_PATH}/about.html">About</a></li>
+      <li><a href="${BASE_PATH}/insights.html">Insights</a></li>
+      <li><a href="${BASE_PATH}/contact.html">Contact</a></li>
+      <li><a href="${BASE_PATH}/contact.html" class="btn btn-primary" style="display:inline-block;margin-top:1rem;">Request a Consultation</a></li>
     </ul>
   </div>
 </header>
@@ -77,36 +84,36 @@ const FOOTER_HTML = `
   <div class="container footer-grid">
 
     <div class="footer-brand">
-      <a href="/index.html">
-        <img src="/assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" class="footer-logo" width="180" height="90" />
+      <a href="${BASE_PATH}/index.html">
+        <img src="${BASE_PATH}/assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" class="footer-logo" width="180" height="90" />
       </a>
       <p class="footer-tagline">Healthcare Complexity. Solved.</p>
       <p class="footer-desc">
         A U.S.-based specialized Oracle Health system integrator serving midmarket
         health systems — from go-live to high performance.
       </p>
-      <img src="/assets/images/Oracle_Gold.png" alt="Oracle Gold Partner" class="oracle-badge" />
+      <img src="${BASE_PATH}/assets/images/Oracle_Gold.png" alt="Oracle Gold Partner" class="oracle-badge" />
     </div>
 
     <div class="footer-links-group">
       <h3 class="footer-heading">Services</h3>
       <ul role="list">
-        <li><a href="services.html#ams">Application Managed Services</a></li>
-        <li><a href="services.html#support">Support Services</a></li>
-        <li><a href="services.html#financial">Financial Process</a></li>
-        <li><a href="services.html#integration">Integration &amp; Interoperability</a></li>
-        <li><a href="services.html#analytics">Reporting &amp; Analytics</a></li>
-        <li><a href="services.html#change">Change Management</a></li>
-        <li><a href="services.html#lifecycle">EHR Lifecycle Management</a></li>
-        <li><a href="services.html#technical">Technical Services</a></li>
+        <li><a href="${BASE_PATH}/services.html#ams">Application Managed Services</a></li>
+        <li><a href="${BASE_PATH}/services.html#support">Support Services</a></li>
+        <li><a href="${BASE_PATH}/services.html#financial">Financial Process</a></li>
+        <li><a href="${BASE_PATH}/services.html#integration">Integration &amp; Interoperability</a></li>
+        <li><a href="${BASE_PATH}/services.html#analytics">Reporting &amp; Analytics</a></li>
+        <li><a href="${BASE_PATH}/services.html#change">Change Management</a></li>
+        <li><a href="${BASE_PATH}/services.html#lifecycle">EHR Lifecycle Management</a></li>
+        <li><a href="${BASE_PATH}/services.html#technical">Technical Services</a></li>
       </ul>
     </div>
 
     <div class="footer-links-group">
       <h3 class="footer-heading">Company</h3>
       <ul role="list">
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/insights.html">Insights</a></li>
+        <li><a href="${BASE_PATH}/about.html">About Us</a></li>
+        <li><a href="${BASE_PATH}/insights.html">Insights</a></li>
       </ul>
 
       <h3 class="footer-heading" style="margin-top:2rem;">Contact</h3>
@@ -122,9 +129,9 @@ const FOOTER_HTML = `
     <div class="container footer-bottom-inner">
       <p>&copy; <span id="footer-year"></span> Cerenium Technologies, LLC. All rights reserved.</p>
       <p>
-        <a href="privacy-policy.html">Privacy Policy</a> &middot;
-        <a href="terms-of-use.html">Terms of Use</a> &middot;
-        <a href="cookie-policy.html">Cookie Policy</a> &middot;
+        <a href="${BASE_PATH}/privacy-policy.html">Privacy Policy</a> &middot;
+        <a href="${BASE_PATH}/terms-of-use.html">Terms of Use</a> &middot;
+        <a href="${BASE_PATH}/cookie-policy.html">Cookie Policy</a> &middot;
         <button class="footer-cookie-link" id="manage-cookies-btn" aria-label="Manage cookie preferences">Manage Cookies</button>
       </p>
     </div>
@@ -142,7 +149,7 @@ const COOKIE_BANNER_HTML = `
         We use analytics cookies (Google Analytics) to understand how visitors use this site,
         which helps us improve our content and services. You can accept or decline non-essential
         cookies below. Essential site functionality does not require cookies.
-        <a href="/cookie-policy.html" class="cookie-policy-link">Learn more</a>
+        <a href="${BASE_PATH}/cookie-policy.html" class="cookie-policy-link">Learn more</a>
       </p>
     </div>
     <div class="cookie-banner-actions">
@@ -523,7 +530,7 @@ function highlightActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link, .mobile-menu a').forEach(link => {
     const href = link.getAttribute('href');
-    if (href && href.split('#')[0] === path) {
+    if (href && href.split('#')[0].split('/').pop() === path) {
       link.classList.add('active');
     }
   });
