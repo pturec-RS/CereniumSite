@@ -24,7 +24,7 @@ const NAV_HTML = `
 
     <!-- Logo -->
     <a href="${BASE_PATH}/index.html" class="nav-logo" aria-label="Cerenium Technologies Home">
-      <img src="${BASE_PATH}/assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" width="180" height="90" />
+      <img src="${BASE_PATH}/assets/images/Cerenium_Tech_White_transparent.webp" alt="Cerenium Technologies" width="180" height="90" />
     </a>
 
     <!-- Desktop Nav -->
@@ -85,7 +85,7 @@ const FOOTER_HTML = `
 
     <div class="footer-brand">
       <a href="${BASE_PATH}/index.html">
-        <img src="${BASE_PATH}/assets/images/Cerenium_Tech_White_transparent.png" alt="Cerenium Technologies" class="footer-logo" width="180" height="90" />
+        <img src="${BASE_PATH}/assets/images/Cerenium_Tech_White_transparent.webp" alt="Cerenium Technologies" class="footer-logo" width="180" height="90" />
       </a>
       <p class="footer-tagline">Healthcare Complexity. Solved.</p>
       <p class="footer-desc">
@@ -204,7 +204,7 @@ const COOKIE_STYLES = `
     font-family: 'DM Sans', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     margin: 0 0 0.35rem 0;
     letter-spacing: 0.02em;
   }
