@@ -31,6 +31,22 @@
 
 .slide.active { opacity: 1; }
 
+/* Mobile hero image — shown on mobile, hidden on desktop */
+.hero-mobile-image {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 768px) {
+  .hero-slideshow { display: none; }
+  .hero-mobile-image { display: block; }
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
