@@ -87,9 +87,9 @@
     <section class="hero" aria-label="Hero">
       <div class="hero-bg" role="presentation">
         <div class="hero-slideshow" aria-hidden="true">
-          <video class="slide active" autoplay muted loop playsinline fetchpriority="high"><source src="assets/images/hero-1.mp4" type="video/mp4" /></video>
-          <video class="slide" autoplay muted loop playsinline><source src="assets/images/hero-2.mp4" type="video/mp4" /></video>
-          <video class="slide" autoplay muted loop playsinline><source src="assets/images/hero-3.mp4" type="video/mp4" /></video>
+          <video class="slide active" autoplay muted loop playsinline fetchpriority="high"><source data-src="assets/images/hero-1.mp4" type="video/mp4" /></video>
+          <video class="slide" autoplay muted loop playsinline><source data-src="assets/images/hero-2.mp4" type="video/mp4" /></video>
+          <video class="slide" autoplay muted loop playsinline><source data-src="assets/images/hero-3.mp4" type="video/mp4" /></video>
         </div>
         <img class="hero-mobile-image" src="assets/images/Hospital%20Corridor.webp" alt="" aria-hidden="true" fetchpriority="high" />
         <div class="hero-overlay"></div>
@@ -369,6 +369,15 @@
 
   <script src="components.js"></script>
   <script>
+    // Only load hero videos on non-mobile viewports
+    if (window.innerWidth > 768) {
+      document.querySelectorAll('.hero-slideshow source[data-src]').forEach(source => {
+        source.setAttribute('src', source.getAttribute('data-src'));
+        source.parentElement.load();
+      });
+    }
+  </script>
+</body>
     // Hero video slideshow
     const slides = document.querySelectorAll('.slide');
     let current = 0;
