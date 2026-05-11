@@ -285,7 +285,7 @@ const COOKIE_STYLES = `
     background: none;
     border: none;
     padding: 0;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font: inherit;
     cursor: pointer;
     text-decoration: underline;
