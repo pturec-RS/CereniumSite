@@ -558,6 +558,16 @@ function initMobileMenu() {
   const menu   = document.getElementById('mobile-menu');
   if (!toggle || !menu) return;
 
+  // Helper: set focusability of all links/buttons inside the mobile menu
+  function setMenuFocusable(focusable) {
+    menu.querySelectorAll('a, button').forEach(el => {
+      el.setAttribute('tabindex', focusable ? '0' : '-1');
+    });
+  }
+
+  // Menu starts closed — make links unfocusable immediately
+  setMenuFocusable(false);
+
   toggle.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen);
@@ -565,6 +575,7 @@ function initMobileMenu() {
     menu.setAttribute('aria-hidden', !isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
     toggle.classList.toggle('is-open', isOpen);
+    setMenuFocusable(isOpen);
   });
 
   // Close on outside click
@@ -576,6 +587,7 @@ function initMobileMenu() {
       menu.setAttribute('aria-hidden', true);
       document.body.style.overflow = '';
       toggle.classList.remove('is-open');
+      setMenuFocusable(false);
     }
   });
 }
