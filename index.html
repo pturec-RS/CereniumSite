@@ -20,6 +20,8 @@
   <!-- Fonts -->
 
   <!-- Styles -->
+  <link rel="preload" href="global.css" as="style" />
+  <link rel="preload" href="index.css" as="style" />
   <link rel="stylesheet" href="global.css" />
   <link rel="stylesheet" href="index.css" />
 
@@ -85,7 +87,7 @@
     <section class="hero" aria-label="Hero">
       <div class="hero-bg" role="presentation">
         <div class="hero-slideshow" aria-hidden="true">
-          <video class="slide active" autoplay muted loop playsinline><source src="assets/images/hero-1.mp4" type="video/mp4" /></video>
+          <video class="slide active" autoplay muted loop playsinline fetchpriority="high"><source src="assets/images/hero-1.mp4" type="video/mp4" /></video>
           <video class="slide" autoplay muted loop playsinline><source src="assets/images/hero-2.mp4" type="video/mp4" /></video>
           <video class="slide" autoplay muted loop playsinline><source src="assets/images/hero-3.mp4" type="video/mp4" /></video>
         </div>
