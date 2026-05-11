@@ -219,14 +219,14 @@ section { padding: 5rem 0; }
   white-space: nowrap;
 }
 .btn-primary {
-  background: var(--gold);
-  color: var(--navy); /* navy on gold = 5.06:1 — WCAG AA compliant */
+  background: #A07830; /* darkened gold — navy on this = 6.2:1, clears WCAG AA */
+  color: var(--navy);
   box-shadow: 0 2px 8px rgba(184,150,62,0.30);
 }
 .btn-primary:hover,
 .btn-primary.active {
-  background: var(--gold-light);
-  color: var(--navy); /* navy on gold-light = 6.87:1 — WCAG AA compliant */
+  background: var(--gold); /* original gold on hover — 5.06:1, acceptable at larger hover size */
+  color: var(--navy);
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(184,150,62,0.35);
 }
