@@ -119,7 +119,8 @@ const FOOTER_HTML = `
       <h3 class="footer-heading" style="margin-top:2rem;">Contact</h3>
       <ul role="list">
         <li><a href="mailto:info@cereniumtech.com">info@cereniumtech.com</a></li>
-        <li><a href="tel:+10000000000">(XXX) XXX-XXXX</a></li>
+        <!-- PHONE: Add business number here when ready, e.g.:
+        <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li> -->
       </ul>
     </div>
 
