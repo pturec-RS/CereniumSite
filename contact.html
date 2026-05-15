@@ -208,14 +208,15 @@
               </p>
             </div>
 
+          </form>
+
             <!-- Success message -->
             <div id="form-success" class="form-success" aria-live="polite" style="display:none;">
               <div class="success-icon" aria-hidden="true">✓</div>
-              <h3>Thank you for reaching out.</h3>
-              <p>A senior Cerenium consultant will contact you within one business day. We look forward to the conversation.</p>
+              <h3>Thank you for your message.</h3>
+              <p>A Cerenium consultant will be in touch with you shortly. You can also email us at <a href="mailto:info@cereniumtech.com">info@cereniumtech.com</a>.</p>
             </div>
 
-          </form>
         </div>
 
         <!-- ── RIGHT: INFO PANEL ── -->
@@ -338,7 +339,14 @@
       function validateForm() {
         let valid = true;
         form.querySelectorAll('[required]').forEach(field => {
-          if (!field.value.trim()) {
+          if (field.type === 'checkbox') {
+            if (!field.checked) {
+              showError(field, 'You must agree to continue.');
+              valid = false;
+            } else {
+              clearError(field);
+            }
+          } else if (!field.value.trim()) {
             showError(field, 'This field is required.');
             valid = false;
           } else if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
