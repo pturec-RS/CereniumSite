@@ -92,7 +92,7 @@ const FOOTER_HTML = `
         A U.S.-based specialized Oracle Health system integrator serving midmarket
         health systems — from go-live to high performance.
       </p>
-      <img src="${BASE_PATH}/assets/images/Oracle_Gold.png" alt="Oracle Gold Partner" class="oracle-badge" />
+
     </div>
 
     <div class="footer-links-group">
