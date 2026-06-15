@@ -1,0 +1,284 @@
+/* ============================================================
+   Cerenium Technologies — careers.css
+   ============================================================ */
+
+/* ── Careers Listings Section ── */
+.careers-listings {
+  padding: 5rem 0 6rem;
+  background: #fff;
+}
+
+.careers-listings .section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* ── No Openings Message ── */
+.careers-empty {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.careers-empty-icon {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.careers-empty p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ── Roles Grid ── */
+.roles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+/* ── Role Card ── */
+.role-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+}
+
+.role-card:hover {
+  box-shadow: 0 8px 28px rgba(27, 42, 74, 0.1);
+}
+
+/* ── Card Header (always visible) ── */
+.role-card-header {
+  padding: 1.75rem;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.role-card-header:focus-visible {
+  outline-offset: -3px;
+}
+
+.role-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.role-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+}
+
+.role-tag--category {
+  color: #6B4F0F;
+  background: var(--gold-pale);
+}
+
+.role-tag--type {
+  color: var(--navy);
+  background: var(--gray-100);
+}
+
+.role-tag--location {
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--gray-200);
+  padding: 0.25rem 0.65rem;
+}
+
+.role-card-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--navy);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.role-card-header p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ── Toggle Indicator ── */
+.role-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--off-white);
+  border: 1px solid var(--gray-200);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  transition: background 0.2s ease, transform 0.3s ease;
+}
+
+.role-toggle svg {
+  width: 16px;
+  height: 16px;
+  color: var(--navy);
+  transition: transform 0.3s ease;
+}
+
+.role-card.is-expanded .role-toggle {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.role-card.is-expanded .role-toggle svg {
+  color: var(--white);
+  transform: rotate(180deg);
+}
+
+/* ── Card Body (expandable) ── */
+.role-card-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.role-card.is-expanded .role-card-body {
+  max-height: 2000px;
+}
+
+.role-card-body-inner {
+  padding: 0 1.75rem 2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* ── Body Content ── */
+.role-description {
+  margin-top: 1.5rem;
+}
+
+.role-description p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.role-section-heading {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin: 2rem 0 0.75rem;
+}
+
+.role-list {
+  padding-left: 0;
+}
+
+.role-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+}
+
+.role-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* ── Apply CTA ── */
+.role-apply-block {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.role-apply-instructions {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.btn-apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.75rem;
+  background: #A07830;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 2px 8px rgba(184, 150, 62, 0.30);
+  transition: all var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-apply:hover {
+  background: var(--gold);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(184, 150, 62, 0.35);
+}
+
+.btn-apply svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── General Interest CTA ── */
+.careers-general {
+  padding: 6rem 0;
+  background: var(--off-white);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .role-card-header {
+    grid-template-columns: 1fr 36px;
+    gap: 1rem;
+  }
+
+  .role-apply-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-apply {
+    width: 100%;
+    justify-content: center;
+  }
+}

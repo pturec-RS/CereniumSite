@@ -1,0 +1,95 @@
+[
+  {
+    "id": "sr-oracle-health-consultant",
+    "active": true,
+    "title": "Senior Oracle Health Consultant",
+    "type": "Contract",
+    "location": "Remote (U.S.)",
+    "summary": "Experienced Oracle Health / Cerner Millennium consultant to lead clinical informatics engagements for midmarket health systems.",
+    "description": [
+      "Cerenium Technologies is seeking a Senior Oracle Health Consultant to join our growing team. You will lead clinical informatics engagements for community and regional health systems (50\u2013500 beds), working directly with clinical and IT leadership to optimize Millennium workflows, support upgrades, and drive measurable outcomes.",
+      "This is a remote, contract-based engagement with the potential for long-term partnership as Cerenium scales its client base."
+    ],
+    "responsibilities": [
+      "Lead Oracle Health / Cerner Millennium optimization and support engagements",
+      "Conduct workflow assessments and deliver actionable recommendations",
+      "Configure and validate Millennium clinical applications (PowerChart, PowerNote, FirstNet, SurgiNet, PharmNet)",
+      "Support regulatory compliance initiatives (CMS, Joint Commission, state reporting)",
+      "Collaborate with client IT teams and Cerenium project leadership",
+      "Contribute to internal knowledge base and engagement playbooks"
+    ],
+    "qualifications": [
+      "5+ years of hands-on Oracle Health / Cerner Millennium experience",
+      "Deep expertise in at least two clinical application areas",
+      "Experience working with community or regional health systems preferred",
+      "Strong communication and client-facing skills",
+      "Ability to work independently in a remote, consultant-led model",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Consulting"
+  },
+  {
+    "id": "revenue-cycle-analyst",
+    "active": true,
+    "title": "Revenue Cycle Analyst \u2014 Oracle Health",
+    "type": "Contract",
+    "location": "Remote (U.S.)",
+    "summary": "Revenue cycle specialist with Oracle Health / Cerner experience to support RCM optimization projects across midmarket health systems.",
+    "description": [
+      "Cerenium Technologies is looking for a Revenue Cycle Analyst with deep Oracle Health experience to support revenue cycle management optimization projects for our midmarket health system clients.",
+      "You will work with client revenue cycle teams to identify workflow gaps, configure billing and claims processes within Millennium, and deliver measurable improvements in clean claim rates, denial management, and charge capture."
+    ],
+    "responsibilities": [
+      "Analyze and optimize Oracle Health revenue cycle workflows",
+      "Configure and test Millennium revenue cycle modules",
+      "Support charge capture, claims management, and denial resolution processes",
+      "Develop dashboards and reporting to track RCM performance metrics",
+      "Train client staff on optimized workflows and best practices",
+      "Document findings and recommendations for client leadership"
+    ],
+    "qualifications": [
+      "3+ years of Oracle Health / Cerner revenue cycle experience",
+      "Working knowledge of Millennium Patient Accounting and Charge Services",
+      "Familiarity with CMS billing regulations and payer requirements",
+      "Experience with RCM analytics and KPI reporting",
+      "Strong analytical and problem-solving skills",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Revenue Cycle"
+  },
+  {
+    "id": "account-executive-oracle-health",
+    "active": true,
+    "title": "Account Executive \u2014 Oracle Health",
+    "type": "Full-Time",
+    "location": "Remote (U.S.)",
+    "summary": "Healthcare IT sales professional to drive new business development across health systems and life sciences organizations running Oracle Health platforms. Commission and equity compensation.",
+    "description": [
+      "Cerenium Technologies is seeking an Account Executive to lead business development efforts across U.S. health systems and life sciences organizations that operate on Oracle Health (Cerner) platforms. This is a senior role for an experienced healthcare IT sales professional who understands the Oracle Health ecosystem, knows how to build relationships with CIOs, CMIOs, CFOs, and IT leadership, and can translate complex consulting capabilities into signed engagements.",
+      "As Cerenium's Account Executive, you will own the full sales cycle \u2014 from prospecting and pipeline development through proposal, negotiation, and close. You will sell Cerenium's portfolio of Oracle Health consulting services, including clinical informatics, revenue cycle optimization, integration and interoperability, application managed services, and EHR lifecycle management.",
+      "This is a full-time employee position with a compensation structure built entirely on commission and equity \u2014 there is no base salary. Earning potential is uncapped, and equity participation is available for the right candidate. You will be joining a lean, founder-led organization at an early and high-impact stage \u2014 where your efforts directly shape the company's growth trajectory and your own long-term upside."
+    ],
+    "responsibilities": [
+      "Identify, qualify, and close Oracle Health consulting engagements with health systems (50\u2013500 beds) and life sciences organizations across the United States",
+      "Build and manage a sales pipeline targeting CIOs, CMIOs, CFOs, VP-level IT leadership, and procurement decision-makers",
+      "Develop account strategies that align Cerenium's service capabilities with client needs \u2014 including clinical optimization, revenue cycle, interoperability, and managed services",
+      "Lead proposal development, SOW scoping, and contract negotiations in collaboration with Cerenium's delivery leadership",
+      "Represent Cerenium at industry conferences, Oracle Health events, and professional networking forums",
+      "Leverage existing relationships and industry knowledge to accelerate pipeline development",
+      "Provide market intelligence and client feedback to inform Cerenium's service offerings and go-to-market strategy",
+      "Maintain accurate pipeline forecasting and sales activity reporting"
+    ],
+    "qualifications": [
+      "8+ years of sales or business development experience in healthcare IT, with a focus on Oracle Health / Cerner environments",
+      "Demonstrated track record of selling consulting services, professional services, or managed services into health systems",
+      "Deep familiarity with the Oracle Health product portfolio (Millennium, PowerChart, Revenue Cycle, HealtheIntent, CommunityWorks)",
+      "Established relationships with health system and life sciences IT leadership",
+      "Experience selling into community hospitals, regional health systems, or midmarket organizations strongly preferred",
+      "Ability to operate independently in a fast-moving, entrepreneurial environment with minimal overhead",
+      "Comfort with a commission-plus-equity compensation structure with no base salary",
+      "Excellent executive communication, presentation, and negotiation skills",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Sales"
+  }
+]

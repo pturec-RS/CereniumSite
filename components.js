@@ -52,6 +52,7 @@ const NAV_HTML = `
         <li><a href="${BASE_PATH}/about.html" class="nav-link">About</a></li>
         <li><a href="${BASE_PATH}/insights.html" class="nav-link">Insights</a></li>
         <li><a href="${BASE_PATH}/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="${BASE_PATH}/careers.html" class="nav-link">Careers</a></li>
       </ul>
     </nav>
 
@@ -72,6 +73,7 @@ const NAV_HTML = `
       <li><a href="${BASE_PATH}/about.html">About</a></li>
       <li><a href="${BASE_PATH}/insights.html">Insights</a></li>
       <li><a href="${BASE_PATH}/contact.html">Contact</a></li>
+      <li><a href="${BASE_PATH}/careers.html">Careers</a></li>
       <li><a href="${BASE_PATH}/contact.html" class="btn btn-primary" style="display:inline-block;margin-top:1rem;">Request a Consultation</a></li>
     </ul>
   </div>
@@ -114,6 +116,7 @@ const FOOTER_HTML = `
       <ul role="list">
         <li><a href="${BASE_PATH}/about.html">About Us</a></li>
         <li><a href="${BASE_PATH}/insights.html">Insights</a></li>
+        <li><a href="${BASE_PATH}/careers.html">Careers</a></li>
       </ul>
 
       <h3 class="footer-heading" style="margin-top:2rem;">Contact</h3>
