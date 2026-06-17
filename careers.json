@@ -3,23 +3,23 @@
     "id": "sr-oracle-health-consultant",
     "active": true,
     "title": "Senior Oracle Health Consultant",
-    "type": "Contract",
+    "type": "Contract, Fractional, Contract-To-Hire",
     "location": "Remote (U.S.)",
-    "summary": "Experienced Oracle Health / Cerner Millennium consultant to lead clinical informatics engagements for midmarket health systems.",
+    "summary": "Experienced Oracle Health / Cerner Millennium & CommunityWorks consultant to lead clinical informatics engagements for midmarket health systems.",
     "description": [
       "Cerenium Technologies is seeking a Senior Oracle Health Consultant to join our growing team. You will lead clinical informatics engagements for community and regional health systems (50\u2013500 beds), working directly with clinical and IT leadership to optimize Millennium workflows, support upgrades, and drive measurable outcomes.",
-      "This is a remote, contract-based engagement with the potential for long-term partnership as Cerenium scales its client base."
+      "This is a remote, contract-to-hire position. You will initially deploy on project-shaped optimization and Application Managed Services (AMS) workflows, with the explicit intent to transition into a permanent, salaried delivery seat as Cerenium scales its client base."
     ],
     "responsibilities": [
-      "Lead Oracle Health / Cerner Millennium optimization and support engagements",
+      "Lead Oracle Health / Cerner Millennium & CommunityWorks optimization and support engagements",
       "Conduct workflow assessments and deliver actionable recommendations",
-      "Configure and validate Millennium clinical applications (PowerChart, PowerNote, FirstNet, SurgiNet, PharmNet)",
+      "Configure, validate, and optimize within specialized Millennium and CommunityWorks clinical applications, with deep expert focus in one or more core areas (e.g., PowerChart/ClinDoc, FirstNet, SurgiNet, or PharmNet).",
       "Support regulatory compliance initiatives (CMS, Joint Commission, state reporting)",
       "Collaborate with client IT teams and Cerenium project leadership",
       "Contribute to internal knowledge base and engagement playbooks"
     ],
     "qualifications": [
-      "5+ years of hands-on Oracle Health / Cerner Millennium experience",
+      "5+ years of hands-on Oracle Health / Cerner Millennium and/or CommunityWorks experience",
       "Deep expertise in at least two clinical application areas",
       "Experience working with community or regional health systems preferred",
       "Strong communication and client-facing skills",
@@ -29,15 +29,15 @@
     "category": "Consulting"
   },
   {
-    "id": "revenue-cycle-analyst",
+    "id": "revenue-cycle-analyst-oracle-health",
     "active": true,
-    "title": "Revenue Cycle Analyst \u2014 Oracle Health",
-    "type": "Contract",
+    "title": "Revenue Cycle Analyst — Oracle Health",
+    "type": "Contract, Fractional, Contract-To-Hire",
     "location": "Remote (U.S.)",
     "summary": "Revenue cycle specialist with Oracle Health / Cerner experience to support RCM optimization projects across midmarket health systems.",
     "description": [
       "Cerenium Technologies is looking for a Revenue Cycle Analyst with deep Oracle Health experience to support revenue cycle management optimization projects for our midmarket health system clients.",
-      "You will work with client revenue cycle teams to identify workflow gaps, configure billing and claims processes within Millennium, and deliver measurable improvements in clean claim rates, denial management, and charge capture."
+      "This is a remote position on a structured contract-to-hire track. You will initially deploy on project-based optimization, clean claim realization, and Application Managed Services (AMS) workflows, with the explicit pathway to transition into a permanent, salaried role as our recurring portfolio matures."
     ],
     "responsibilities": [
       "Analyze and optimize Oracle Health revenue cycle workflows",
@@ -49,7 +49,7 @@
     ],
     "qualifications": [
       "3+ years of Oracle Health / Cerner revenue cycle experience",
-      "Working knowledge of Millennium Patient Accounting and Charge Services",
+      "Working knowledge of Millennium Patient Accounting (CPA), OHPAC, and Charge Services",
       "Familiarity with CMS billing regulations and payer requirements",
       "Experience with RCM analytics and KPI reporting",
       "Strong analytical and problem-solving skills",
@@ -58,38 +58,180 @@
     "category": "Revenue Cycle"
   },
   {
-    "id": "account-executive-oracle-health",
+    "id": "strategic-sales-advisor-oracle-health",
     "active": true,
-    "title": "Account Executive \u2014 Oracle Health",
-    "type": "Full-Time",
+    "title": "Strategic Sales Advisor — Oracle Health",
+    "type": "Contract, Fractional, Contract-To-Hire",
     "location": "Remote (U.S.)",
-    "summary": "Healthcare IT sales professional to drive new business development across health systems and life sciences organizations running Oracle Health platforms. Commission and equity compensation.",
+    "summary": "Senior healthcare IT commercial professional with an established network of health system C-suite contacts to accelerate pipeline development for midmarket and regional organizations.",
     "description": [
-      "Cerenium Technologies is seeking an Account Executive to lead business development efforts across U.S. health systems and life sciences organizations that operate on Oracle Health (Cerner) platforms. This is a senior role for an experienced healthcare IT sales professional who understands the Oracle Health ecosystem, knows how to build relationships with CIOs, CMIOs, CFOs, and IT leadership, and can translate complex consulting capabilities into signed engagements.",
-      "As Cerenium's Account Executive, you will own the full sales cycle \u2014 from prospecting and pipeline development through proposal, negotiation, and close. You will sell Cerenium's portfolio of Oracle Health consulting services, including clinical informatics, revenue cycle optimization, integration and interoperability, application managed services, and EHR lifecycle management.",
-      "This is a full-time employee position with a compensation structure built entirely on commission and equity \u2014 there is no base salary. Earning potential is uncapped, and equity participation is available for the right candidate. You will be joining a lean, founder-led organization at an early and high-impact stage \u2014 where your efforts directly shape the company's growth trajectory and your own long-term upside."
+      "Cerenium Technologies is seeking a Strategic Sales Advisor to accelerate our commercial pipeline across U.S. community and regional health systems (50\u2013500 beds) operating on Oracle Health (Cerner) platforms. This fractional, remote role is explicitly structured for a seasoned healthcare IT sales executive, consultant, or semi-retired industry leader who brings a pre-loaded, active network of hospital relationships and wants a high-upside, flexible engagement.",
+      "Operating as a key growth catalyst, you will leverage your existing executive-level relationships to introduce Cerenium’s specialized systems integration, revenue cycle optimization, and Application Managed Services (AMS) capabilities directly to hospital decision-makers. This role features a highly rewarding commission structure paired with long-term equity participation milestones for the right strategic partner."
     ],
     "responsibilities": [
-      "Identify, qualify, and close Oracle Health consulting engagements with health systems (50\u2013500 beds) and life sciences organizations across the United States",
-      "Build and manage a sales pipeline targeting CIOs, CMIOs, CFOs, VP-level IT leadership, and procurement decision-makers",
-      "Develop account strategies that align Cerenium's service capabilities with client needs \u2014 including clinical optimization, revenue cycle, interoperability, and managed services",
-      "Lead proposal development, SOW scoping, and contract negotiations in collaboration with Cerenium's delivery leadership",
-      "Represent Cerenium at industry conferences, Oracle Health events, and professional networking forums",
-      "Leverage existing relationships and industry knowledge to accelerate pipeline development",
-      "Provide market intelligence and client feedback to inform Cerenium's service offerings and go-to-market strategy",
-      "Maintain accurate pipeline forecasting and sales activity reporting"
+      "Leverage an existing, mature network of health system C-suite executives (CIOs, CFOs, CMIOs) to open doors and secure qualified discovery meetings",
+      "Introduce Cerenium's core service lines—including Legacy Support, AMS, and high-margin optimization plays—to target midmarket healthcare organizations",
+      "Partner directly with managing leadership to transition warmed relationships into formal scoping and SOW development phases",
+      "Provide high-level strategic guidance on account entry mechanics and client-side procurement dynamics"
     ],
     "qualifications": [
-      "8+ years of sales or business development experience in healthcare IT, with a focus on Oracle Health / Cerner environments",
-      "Demonstrated track record of selling consulting services, professional services, or managed services into health systems",
-      "Deep familiarity with the Oracle Health product portfolio (Millennium, PowerChart, Revenue Cycle, HealtheIntent, CommunityWorks)",
-      "Established relationships with health system and life sciences IT leadership",
-      "Experience selling into community hospitals, regional health systems, or midmarket organizations strongly preferred",
-      "Ability to operate independently in a fast-moving, entrepreneurial environment with minimal overhead",
-      "Comfort with a commission-plus-equity compensation structure with no base salary",
-      "Excellent executive communication, presentation, and negotiation skills",
+      "8+ years of enterprise-level sales, business development, or executive leadership experience within the Oracle Health / Cerner ecosystem",
+      "An active, verifiable portfolio of relationships with hospital and regional health system IT and financial executives",
+      "Deep familiarity with the Oracle Health product portfolio, marketplace needs, and midmarket health system dynamics",
+      "Desire for a flexible, fractional, or part-time advisory engagement that highly rewards relationship equity",
       "U.S.-based with authorization to work in the United States"
     ],
     "category": "Sales"
+  },
+  {
+    "id": "fsi-open-engine-interface-engineer",
+    "active": true,
+    "title": "FSI / Open Engine Interface Engineer",
+    "type": "Contract, Fractional, Contract-To-Hire",
+    "location": "Remote (U.S.)",
+    "summary": "Technical interoperability specialist fluent in Cerner FSI, Open Engine, and CCL to build and maintain secure data pipelines for midmarket health systems.",
+    "description": [
+      "Cerenium Technologies is seeking a Foreign System Integration (FSI) / Open Engine Interface Engineer to support our Interoperability and Legacy Support service lines across community and regional health systems (50\u2013500 beds). This role begins as a fractional 1099 contract engagement, offering a direct pathway to a permanent engineering role as our recurring Application Managed Services (AMS) portfolio scales.",
+      "Working closely with our Chief Technology Officer, you will own the technical configuration, testing, and deployment of critical data feeds connecting our clients' core EHRs to external ancillary applications, state registries, and modern API ecosystems."
+    ],
+    "responsibilities": [
+      "Design, build, validate, and maintain complex HL7 and FHIR-native interfaces using Cerner Open Engine (SIO/FSI)",
+      "Write, test, and debug custom Cerner Command Language (CCL) scripts for data routing, filtering, and translation",
+      "Proactively monitor interface transaction queues and troubleshoot connectivity or data validation failures under structured response-time SLAs",
+      "Collaborate with client-side IT groups and third-party vendors to manage secure network routing, VPN endpoints, and data maps"
+    ],
+    "qualifications": [
+      "5+ years of dedicated interface engineering experience specifically within an Oracle Health / Cerner Millennium environment",
+      "Deep technical mastery of Cerner FSI architect logic, Open Engine scripts, and modern healthcare web services (REST, FHIR)",
+      "Strong foundational knowledge of backend Millennium database tables and CCL query optimization",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Interoperability"
+  },
+  {
+    "id": "analytics-data-intelligence-consultant",
+    "active": true,
+    "title": "Analytics & Data Intelligence Consultant (CCL Developer)",
+    "type": "Contract, Fractional, Contract-To-Hire",
+    "location": "Remote (U.S.)",
+    "summary": "Data specialist expert in Cerner Command Language (CCL), Discern Analytics, and HealtheIntent to deliver advanced reporting solutions for midmarket health systems.",
+    "description": [
+      "Cerenium Technologies is seeking an Analytics & Data Intelligence Consultant to join our Optimization delivery team on a contract-to-hire track. In this remote role, you will design and develop custom data extraction and business intelligence solutions that help our midmarket hospital clients unlock the value of their clinical and financial data.",
+      "You will serve as our primary data extraction engineer, writing complex code to drive custom KPI dashboards, federal regulatory reporting (CMS/Joint Commission), and advanced Population Health analytics platforms."
+    ],
+    "responsibilities": [
+      "Develop, test, and optimize complex, high-performance Cerner Command Language (CCL) scripts for data extraction and custom reporting",
+      "Build actionable dashboards and operational reports utilizing Discern Analytics (DA2), PowerInsight, and third-party BI platforms (PowerBI/Tableau)",
+      "Support the implementation, data validation, and build optimization of Oracle Health's Health Data Intelligence (HDI) / HealtheIntent platforms",
+      "Translate complex clinical and financial data requests from hospital C-suite leaders into precise, technical data models"
+    ],
+    "qualifications": [
+      "5+ years of hands-on data extraction and reporting experience inside the Oracle Health / Cerner Millennium ecosystem",
+      "Expert-level fluency in writing and performance-tuning complex CCL scripts and SQL queries against the Cerner data model",
+      "Demonstrated experience building custom reporting solutions for Cerner Millennium Revenue Cycle or Core Clinical modules",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Interoperability"
+  },
+  {
+    "id": "technical-support-desk-lead",
+    "active": true,
+    "title": "Technical Support Desk Lead — Oracle Health",
+    "type": "Contract, Fractional, Contract-To-Hire",
+    "location": "Remote (U.S.)",
+    "summary": "Operations-focused lead engineer to manage ticket triage, incident resolution, and SLA adherence across our multi-tenant Oracle Health AMS practice.",
+    "description": [
+      "Cerenium Technologies is seeking a Technical Support Desk Lead to anchor our Application Managed Services (AMS) and Legacy Support infrastructure. This remote, contract-to-hire position is designed for an operations-minded engineer who wants to manage our modern, multi-tenant IT Service Management (ITSM) environment and ensure flawless delivery to our midmarket healthcare clients.",
+      "Working directly alongside our Chief Technology Officer, you will lead the daily triage of incoming system incidents, manage a PHI-light service desk protocol, and serve as the operational linchpin for our 1099 delivery engineering bench."
+    ],
+    "responsibilities": [
+      "Manage the daily intake, severity classification, and assignment of incoming client tickets within our multi-tenant ITSM tool (Jira Service Management/Freshservice)",
+      "Ensure absolute adherence to response-time SLAs across Bronze and Silver support retainer tiers",
+      "Provide technical tier-1 and tier-2 troubleshooting for Cerner environment issues, user provisioning, and printer/device routing",
+      "Maintain our internal engineering knowledge base, enforcing strict configuration and runbook documentation disciplines across the contract bench"
+    ],
+    "qualifications": [
+      "4+ years of experience working within an IT support desk environment, specifically supporting Oracle Health / Cerner Millennium systems",
+      "Familiarity with hospital ticketing operations, severity matrices, and remote environment access management",
+      "Strong operational understanding of ITIL frameworks, ticket routing automation, and multi-tenant service desk tools",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Consulting"
+  },
+  {
+    "id": "clinical-ai-emerging-tech-consultant",
+    "active": true,
+    "title": "Clinical AI & Emerging Technology Consultant",
+    "type": "Contract, Fractional, Contract-To-Hire",
+    "location": "Remote (U.S.)",
+    "summary": "Innovation-focused consultant to design, deploy, and drive adoption for Oracle Health Clinical AI Agent (CAA) and ambient intelligence workflows.",
+    "description": [
+      "Cerenium Technologies is seeking a Clinical AI & Emerging Technology Consultant to spearhead our advanced optimization and innovation service lines. This remote, fractional role is designed for a forward-thinking clinical informatics specialist who understands how to bridge legacy Millennium workflows with next-generation ambient AI tools.",
+      "You will serve as our primary subject matter expert for the rollout of the Oracle Health Clinical AI Agent (CAA). In this role, you will partner with client CMIOs to configure ambient listening templates, optimize voice-to-charting accuracy, and reduce document fatigue for community hospital clinicians."
+    ],
+    "responsibilities": [
+      "Lead the clinical scoping, design, and workflow validation for Oracle Health Clinical AI Agent (CAA) enablement initiatives",
+      "Collaborate with hospital clinical informatics teams to integrate ambient voice-recognition solutions seamlessly into PowerChart workflows",
+      "Develop provider adoption metrics, conduct personalization training, and run change management playbooks to minimize documentation friction",
+      "Evaluate the co-existence patterns of legacy documentation templates with cloud-native, AI-embedded EHR layers"
+    ],
+    "qualifications": [
+      "5+ years of clinical informatics or EHR optimization experience, with a heavy focus on Cerner Millennium/CommunityWorks environments",
+      "Hands-on implementation or pilot experience with ambient clinical intelligence, voice-to-text workflows, or AI-driven documentation extensions",
+      "Strong background in provider adoption strategies, clinical change management, and building relationships with hospital medical leadership",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Consulting"
+  },
+  {
+    "id": "regulatory-compliance-quality-program-manager",
+    "active": true,
+    "title": "Regulatory Compliance & Quality Program Manager",
+    "type": "Contract, Fractional, Contract-To-Hire",
+    "location": "Remote (U.S.)",
+    "summary": "Compliance expert to track federal healthcare updates and configure Cerner Millennium systems for CMS, ONC, and Promoting Interoperability programs.",
+    "description": [
+      "Cerenium Technologies is seeking a Regulatory Compliance & Quality Program Manager to lead compliance-driven optimization initiatives for our community and regional health system clients. This remote, contract-to-hire role ensures our clients' Oracle Health systems remain perfectly aligned with evolving federal and state mandates.",
+      "You will act as the structural bridge between government regulations and software configuration, translating complex programs like CMS Promoting Interoperability and MIPS into precise build requirements across our clients' production environments."
+    ],
+    "responsibilities": [
+      "Monitor, analyze, and interpret federal healthcare IT regulations (CMS, ONC, Joint Commission) to determine systemic impacts on the Cerner platform",
+      "Coordinate the technical and functional build changes required for annual regulatory packages and compliance-driven system updates",
+      "Configure and validate Millennium quality measures, clinical decision support alerts, and electronic reporting dashboards",
+      "Conduct readiness assessments and deliver clear, actionable remediation roadmaps to hospital executive leadership"
+    ],
+    "qualifications": [
+      "5+ years of healthcare IT experience, with a specific focus on managing regulatory programs within an Oracle Health / Cerner environment",
+      "Deep, practical knowledge of CMS Quality Reporting, Promoting Interoperability, Promoting Quality Measures, and ONC certification criteria",
+      "Proven capability to design and build Cerner documentation requirements that naturally capture necessary regulatory data points",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Consulting"
+  },
+  {
+    "id": "healthcare-it-project-manager",
+    "active": true,
+    "title": "Healthcare IT Project Manager",
+    "type": "Contract, Fractional, Contract-To-Hire",
+    "location": "Remote (U.S.)",
+    "summary": "Delivery professional to manage project scope, timelines, resource allocation, and SLA adherence across optimization and AMS implementations.",
+    "description": [
+      "Cerenium Technologies is seeking a Healthcare IT Project Manager to drive the flawless execution of our technical and functional consulting engagements. Launching on a contract-to-hire path, this remote role is designed to handle increasing project volume and scale directly into a permanent operations seat.",
+      "You will manage the end-to-end lifecycle of midmarket hospital optimization projects, track scope boundaries on Application Managed Services (AMS) retainers, and coordinate our distributed team of elite 1099 consulting analysts."
+    ],
+    "responsibilities": [
+      "Direct the execution of Oracle Health optimization and support projects, keeping deliverables strictly on time and within budget parameters",
+      "Enforce rigorous scope management, identifying out-of-scope client requests and coordinating with leadership to generate change orders",
+      "Manage client-side relationship communications, lead weekly status reviews, and organize project milestones",
+      "Track consultant hour utilization against active Statement of Work (SOW) budgets, ensuring healthy internal project margins"
+    ],
+    "qualifications": [
+      "5+ years of project management experience directing implementations, upgrades, or optimization workflows inside health system environments",
+      "Solid understanding of Oracle Health / Cerner Millennium lifecycles, implementation methodologies, and technical dependencies",
+      "Proficiency with modern project management software and tracking tools (Jira, Smartsheet, MS Project)",
+      "PMP certification or equivalent formal agile/waterfall methodology training preferred",
+      "U.S.-based with authorization to work in the United States"
+    ],
+    "category": "Consulting"
   }
 ]
